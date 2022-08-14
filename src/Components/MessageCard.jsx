@@ -6,12 +6,12 @@ export default function MessageCard({ message }) {
     <>
       <div className="Message-Card">
         {message &&
-          message.map((message) => (
+          message.map((message) => {
             <div className="posted-message" key={message.id}>
               <h3>{message.name}</h3>
               <p>{message.text}</p>
-            </div>
-          ))}
+            </div>;
+          })}
       </div>
     </>
   );
